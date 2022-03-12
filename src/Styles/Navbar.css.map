@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAIA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAPH,+CAAqE;CAQ/E",
+    "mappings": "AAGA,AAAA,OAAO,CAAC;EACJ,KAAK,ECDE,IAAI;EDEX,MAAM,ECHK,IAAI;EDIf,UAAU,ECNH,+CAAqE;CDO/E;;AAED,AAAA,OAAO,EAAE,EAAE,CAAC;EACR,KAAK,ECTI,KAAK;CDUjB",
     "sources": [
-        "Navbar.scss"
+        "Navbar.scss",
+        "../Variables/Variables.scss"
     ],
     "names": [],
     "file": "Navbar.css"
