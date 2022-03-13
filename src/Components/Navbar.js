@@ -5,7 +5,7 @@ export default function AppNavbar() {
     return (
 <Navbar className='Navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home">Corona Data</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
