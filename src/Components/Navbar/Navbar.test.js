@@ -5,11 +5,12 @@ import Navbar from './Navbar'
 
 
 
-test("Navbar renders properly", () => {
+test("Navbar renders properly and functions properly", () => {
     render(<Navbar/>)
     let navbar = screen.getByRole('navigation')
     let hamburger = screen.getByRole('button', {name: /Toggle Navigation/i})
     let dropdown = screen.getByText('Dropdown')
+    let link = screen.getByText('Features')
     expect(navbar).toBeInTheDocument();
     expect(hamburger).toBeInTheDocument();
     expect(dropdown).toBeInTheDocument();
@@ -18,6 +19,7 @@ test("Navbar renders properly", () => {
     userEvent.click(dropdown)
     let dropdownEle = screen.getByText('Action')
     expect(dropdownEle).toBeInTheDocument();
+    expect(link).toHaveAttribute('href', "#features")
 
     // research closest function
 })
