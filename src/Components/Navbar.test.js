@@ -10,11 +10,16 @@ test("Navbar renders properly", () => {
 
     let navbar = screen.getByRole('navigation')
     let hamburger = screen.getByRole('button', {name: /Toggle Navigation/i})
+    let dropdown = screen.getByText('Dropdown')
     expect(navbar).toBeInTheDocument();
     expect(hamburger).toBeInTheDocument();
-
+    expect(dropdown).toBeInTheDocument();
+    
     userEvent.click(hamburger)
-
-    expect(hamburger).toHaveBeenCalledTimes(1)
+    expect(hamburger).toHaveClass('navbar-toggler')
+    userEvent.click(dropdown)
+    let dropdownEle = screen.getByText('Action')
+    expect(dropdownEle).toBeInTheDocument();
+    
 
 })
