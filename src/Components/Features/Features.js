@@ -14,9 +14,8 @@ export default function Features() {
                 <img class='img-fluid' src={layout} alt='Layout'/>
             </div>
             <div class='col-4 p-5'>
-            <h3>Layout will display map and graph</h3>
-            <img class='img-thumbnail' src={layout2} alt='Layout2'/>
-            <img class='img-thumbnail' src={layout3} alt='Layout3'/>
+            <img class='img-thumbnail' src={layout2} alt='ideas'/>
+            <img class='img-thumbnail' src={layout3} alt='posts'/>
             </div>
         </div>
     </div>
