@@ -12,18 +12,18 @@ export default function GraphData() {
           })
           .then(function (response) {
             console.log(response);
+            setData(response)
           })
           .catch(function (error) {
             console.log(error);
           })
           .then(function () {
           });  
-
-          console.log('hello')
     }, [])
     return (
         <>
-
+        <h1>{Object.keys(data)}</h1>
+        <h1>{Object.values(data)}</h1>
         </>
     )
 }
