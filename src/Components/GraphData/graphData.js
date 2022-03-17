@@ -5,6 +5,8 @@ import axios from 'axios'
 
 export default function graphData() {
 
+    const [ data, setData ] = useState('')
+
     useEffect(() => {
         axios.get('https://disease.sh/v3/covid-19/all', {
           })
@@ -15,7 +17,6 @@ export default function graphData() {
             console.log(error);
           })
           .then(function () {
-            // always executed
           });  
     }, [])
     return (
