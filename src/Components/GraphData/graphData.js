@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 
-export default function graphData() {
+export default function GraphData() {
 
     const [ data, setData ] = useState('')
 
@@ -18,6 +18,8 @@ export default function graphData() {
           })
           .then(function () {
           });  
+
+          console.log('hello')
     }, [])
     return (
         <>
