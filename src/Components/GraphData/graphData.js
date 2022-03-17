@@ -17,13 +17,11 @@ export default function GraphData() {
           .catch(function (error) {
             console.log(error);
           })
-          .then(function () {
-          });  
     }, [])
     return (
-        <>
-        <h1>{JSON.stringify(data)}</h1>
+        <div class='container p-5'>
+        <p class='text-break'>{JSON.stringify(data)}</p>
         <h1></h1>
-        </>
+        </div>
     )
 }

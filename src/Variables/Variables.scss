@@ -1,5 +1,5 @@
 
-@import "~bootstrap/scss/bootstrap";
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 
@@ -9,7 +9,16 @@ $whiteColor: white;
 $navbarHeight: 3rem;
 $width100: 100%;
 $joseFont: 'Josefin Sans', sans-serif !important;
-
+$spacers: (
+    0: 1,
+    1: 1rem,
+    2: 2rem,
+    3: 3rem,
+    4: 4rem,
+    5: 5rem
+);
 body {
     font-family: $joseFont;
 }
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
