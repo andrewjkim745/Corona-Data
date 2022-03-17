@@ -22,8 +22,8 @@ export default function GraphData() {
     }, [])
     return (
         <>
-        <h1>{Object.keys(data)}</h1>
-        <h1>{Object.values(data)}</h1>
+        <h1>{JSON.stringify(data)}</h1>
+        <h1></h1>
         </>
     )
 }
