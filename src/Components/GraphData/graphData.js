@@ -21,7 +21,7 @@ export default function GraphData() {
     return (
         <div class='container p-7'>
           <h1>Rendered Data</h1>
-        <p class='text-break'>{JSON.stringify(data)}</p>
+        <p class='text-break p-7'>{JSON.stringify(data)}</p>
         </div>
     )
 }
